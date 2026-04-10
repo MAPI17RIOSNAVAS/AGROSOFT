@@ -3,11 +3,11 @@ import { IsEmail, IsPositive, IsString, MaxLength, MinLength } from "class-valid
 export class CreateUsuarioDto {
     
     @IsString()
-    @MinLength(1)
+    @MinLength(2)
     name:string
 
     @IsString()
-    @MinLength(1)
+    @MinLength(2)
     apellido:string;
 
     @IsEmail()
