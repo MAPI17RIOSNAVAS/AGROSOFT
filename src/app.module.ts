@@ -3,6 +3,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { CultivosModule } from './cultivos/cultivos.module';
+import { VentaModule } from './venta/venta.module';
+import { VentaModule } from './venta/venta.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -18,6 +20,7 @@ import { CultivosModule } from './cultivos/cultivos.module';
     }),
     UsuariosModule,
     CultivosModule,
+    VentaModule,
   ],
   controllers: [],
   providers: [],
